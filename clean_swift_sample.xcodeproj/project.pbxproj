@@ -21,6 +21,7 @@
 		F82A5F0E23DD71E000B9E947 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F0D23DD71E000B9E947 /* WeatherApi.swift */; };
 		F82A5F1123DD7A2500B9E947 /* Api+WeatherForLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F1023DD7A2500B9E947 /* Api+WeatherForLocation.swift */; };
 		F82A5F1423DD7CDF00B9E947 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F1323DD7CDF00B9E947 /* WeatherModel.swift */; };
+		F82A5F1723DD8ACA00B9E947 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F1623DD8ACA00B9E947 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F82A5F0D23DD71E000B9E947 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
 		F82A5F1023DD7A2500B9E947 /* Api+WeatherForLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+WeatherForLocation.swift"; sourceTree = "<group>"; };
 		F82A5F1323DD7CDF00B9E947 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F82A5F1623DD8ACA00B9E947 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 		F82A5F1523DD8A2700B9E947 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				F82A5F1623DD8ACA00B9E947 /* Config.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				F82A5ED823DD460E00B9E947 /* ViewController.swift in Sources */,
 				F82A5ED423DD460E00B9E947 /* AppDelegate.swift in Sources */,
 				F82A5F0E23DD71E000B9E947 /* WeatherApi.swift in Sources */,
+				F82A5F1723DD8ACA00B9E947 /* Config.swift in Sources */,
 				F82A5F1123DD7A2500B9E947 /* Api+WeatherForLocation.swift in Sources */,
 				F82A5F1423DD7CDF00B9E947 /* WeatherModel.swift in Sources */,
 				F82A5ED623DD460E00B9E947 /* SceneDelegate.swift in Sources */,
