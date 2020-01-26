@@ -9,41 +9,41 @@
 import Foundation
 
 struct WeatherModel: Codable {
-    let coord: Coordinate
-    let weather: [Weather]
     let base: String
-    let main: Main
-    let visibility: Float
-    let wind: Wind
     let clouds: Clouds
+    let cod: Int
+    let coord: Coord
     let dt: Int
+    let id: Int
+    let main: Main
+    let name: String
     let sys: Sys
     let timezone: Int
-    let id: Int
-    let name: String
-    let cod: Int
+    let visibility: Int
+    let weather: [Weather]
+    let wind: Wind
 }
 
 extension WeatherModel {
-    struct Coordinate: Codable {
-        let lon: Float
+    struct Coord: Codable {
         let lat: Float
+        let lon: Float
     }
     
     struct Weather: Codable {
         let id: Int
         let main: String
-        let desctiption: String
+        let description: String
         let icon: String
     }
     
     struct Main: Codable {
-        let temp: Float
         let feels_like: Float
+        let temp: Float
         let temp_min: Float
         let temp_max: Float
-        let pressure: Float
-        let humidity: Float
+        let pressure: Int
+        let humidity: Int
     }
     
     struct Wind: Codable {
