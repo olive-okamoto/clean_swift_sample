@@ -6,6 +6,7 @@ target 'clean_swift_sample' do
   use_frameworks!
 
   pod "RxSwift"
+  pod "Moya"
 
   # Pods for clean_swift_sample
 
