@@ -2,21 +2,17 @@
 # platform :ios, '9.0'
 
 target 'clean_swift_sample' do
-  # Comment the next line if you don't want to use dynamic frameworks
+
   use_frameworks!
 
-  pod "RxSwift"
-  pod "Moya"
-
-  # Pods for clean_swift_sample
+  pod 'RxSwift', '~> 4.0'
+  pod 'Moya/RxSwift', '~> 13.0'
 
   target 'clean_swift_sampleTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'clean_swift_sampleUITests' do
-    # Pods for testing
   end
 
 end
