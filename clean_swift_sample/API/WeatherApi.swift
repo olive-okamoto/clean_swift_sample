@@ -21,7 +21,6 @@ class WeatherApi {
         return provider.rx.request(target)
             .filterSuccessfulStatusCodes()
             .map(R.Response.self)
-        
     }
 }
 
