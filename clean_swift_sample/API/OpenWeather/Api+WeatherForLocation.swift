@@ -14,17 +14,14 @@ extension OpenWeatherApi {
         
         typealias Response = WeatherModel
         
-        let city: String
-        let country: String
-        let app_id: String
+        var parameters: [String: Any] = [:]
         
-        var path: String { return "?q=\(city),\(country)&APPID=\(app_id)" }
-        var task: Task { return .requestPlain }
+        var path: String { return "/weather" }
+        var task: Task { return .requestParameters(parameters: parameters, encoding: URLEncoding.default) }
         
         init(city: String, country: String, app_id: String) {
-            self.city = city
-            self.country = country
-            self.app_id = app_id
+            parameters["q"] = city + "," + country
+            parameters["APPID"] = app_id
         }
     }
 }
