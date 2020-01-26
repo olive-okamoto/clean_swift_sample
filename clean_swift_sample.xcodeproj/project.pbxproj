@@ -103,6 +103,7 @@
 				F82A5F0423DD6B0300B9E947 /* Presentation */,
 				F82A5F0523DD6B0E00B9E947 /* Domain */,
 				F82A5F0623DD6B1600B9E947 /* Data */,
+				F82A5F0823DD6E7A00B9E947 /* Util */,
 				F82A5ED323DD460E00B9E947 /* AppDelegate.swift */,
 				F82A5ED523DD460E00B9E947 /* SceneDelegate.swift */,
 				F82A5ED723DD460E00B9E947 /* ViewController.swift */,
@@ -166,6 +167,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F82A5F0823DD6E7A00B9E947 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
