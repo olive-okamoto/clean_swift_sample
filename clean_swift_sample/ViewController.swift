@@ -7,11 +7,27 @@
 //
 
 import UIKit
+import Moya
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        WeatherApi.shared.request(OpenWeatherApi.GetWeatherByName(city: "Tokyo", country: "jp", app_id: Config.API_KEY))
+            .subscribe(onSuccess: { data in
+                print(data)
+            }, onError: { error in
+                print(error)
+                do {
+                     let errorResponse = error as? Moya.MoyaError
+                     if let body = try errorResponse?.response?.mapJSON(){
+                          print(body)
+                     }
+                } catch {
+                     print(error)
+                }
+            })
     }
 
 
