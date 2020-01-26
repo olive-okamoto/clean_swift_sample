@@ -32,8 +32,14 @@ extension WeatherApiTargetType {
     var baseURL: URL {
         return URL(string: BASE_URL)!
     }
+    var method: Moya.Method { return .get }
     var headers: [String : String]? { return ["Content-type": "application/json"] }
+    // テストの時などに、実際にAPIを叩かずにローカルのjsonファイルを読み込める
+    var sampleData: Data {
+        let path = Bundle.main.path(forResource: "samples", ofType: "json")!
+        return FileHandle(forReadingAtPath: path)!.readDataToEndOfFile()
+    }
 }
 
-enum OpenWeather {
+enum OpenWeatherApi {
 }
