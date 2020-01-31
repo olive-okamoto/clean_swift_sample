@@ -193,6 +193,8 @@
 		F82A5F0423DD6B0300B9E947 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F82A5F3F23E46E2600B9E947 /* Presenter */,
+				F82A5F4023E46E2E00B9E947 /* View */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -200,6 +202,8 @@
 		F82A5F0523DD6B0E00B9E947 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				F82A5F3C23E46DF000B9E947 /* Repository */,
+				F82A5F3B23E46DE700B9E947 /* UseCase */,
 				F82A5F0723DD6DBA00B9E947 /* Model */,
 			);
 			path = Domain;
@@ -208,6 +212,8 @@
 		F82A5F0623DD6B1600B9E947 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F82A5F3D23E46E0A00B9E947 /* DataStore */,
+				F82A5F3E23E46E1300B9E947 /* Entity */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -258,6 +264,48 @@
 				F82A5F1623DD8ACA00B9E947 /* Config.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		F82A5F3B23E46DE700B9E947 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		F82A5F3C23E46DF000B9E947 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F82A5F3D23E46E0A00B9E947 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		F82A5F3E23E46E1300B9E947 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F82A5F3F23E46E2600B9E947 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F82A5F4023E46E2E00B9E947 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
