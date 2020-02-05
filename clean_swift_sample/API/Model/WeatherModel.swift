@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct WeatherModel: Codable {
+public struct WeatherModel: Codable {
     let base: String
     let clouds: Clouds
     let cod: Int
