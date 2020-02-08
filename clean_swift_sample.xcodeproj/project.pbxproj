@@ -14,6 +14,7 @@
 		F82702DB23EE7AC000773FD8 /* CityWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702DA23EE7AC000773FD8 /* CityWeatherUseCase.swift */; };
 		F82702DF23EE820200773FD8 /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702DE23EE820200773FD8 /* CityData.swift */; };
 		F82702E223EEB35500773FD8 /* CitySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702E123EEB35500773FD8 /* CitySelectViewController.swift */; };
+		F82702E423EEB3DE00773FD8 /* CitySelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82702E323EEB3DE00773FD8 /* CitySelectViewController.storyboard */; };
 		F82A5ED423DD460E00B9E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED323DD460E00B9E947 /* AppDelegate.swift */; };
 		F82A5ED623DD460E00B9E947 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED523DD460E00B9E947 /* SceneDelegate.swift */; };
 		F82A5ED823DD460E00B9E947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED723DD460E00B9E947 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		F82702DA23EE7AC000773FD8 /* CityWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherUseCase.swift; sourceTree = "<group>"; };
 		F82702DE23EE820200773FD8 /* CityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
 		F82702E123EEB35500773FD8 /* CitySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectViewController.swift; sourceTree = "<group>"; };
+		F82702E323EEB3DE00773FD8 /* CitySelectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CitySelectViewController.storyboard; sourceTree = "<group>"; };
 		F82A5ED023DD460E00B9E947 /* clean_swift_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clean_swift_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82A5ED323DD460E00B9E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82A5ED523DD460E00B9E947 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F82702E123EEB35500773FD8 /* CitySelectViewController.swift */,
+				F82702E323EEB3DE00773FD8 /* CitySelectViewController.storyboard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			files = (
 				F82A5EE023DD460E00B9E947 /* LaunchScreen.storyboard in Resources */,
 				F82A5EDD23DD460E00B9E947 /* Assets.xcassets in Resources */,
+				F82702E423EEB3DE00773FD8 /* CitySelectViewController.storyboard in Resources */,
 				F82A5EDB23DD460E00B9E947 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
