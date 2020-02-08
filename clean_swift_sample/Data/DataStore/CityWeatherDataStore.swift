@@ -10,12 +10,12 @@ import Foundation
 import RxSwift
 
 // MARK: - Interface
-public protocol WeatherDataStore {
+public protocol CityWeatherDataStore {
     func getWeather(by city: String, country: String, app_id: String) -> Observable<WeatherModel>
 }
 
 // MARK: - Implementation
-struct WeatherDataStoreImpl: WeatherDataStore {
+struct CityWeatherDataStoreImpl: CityWeatherDataStore {
     
     private var disposeBag = DisposeBag()
     

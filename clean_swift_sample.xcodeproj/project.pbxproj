@@ -22,7 +22,7 @@
 		F82A5F1123DD7A2500B9E947 /* Api+WeatherForLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F1023DD7A2500B9E947 /* Api+WeatherForLocation.swift */; };
 		F82A5F1423DD7CDF00B9E947 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F1323DD7CDF00B9E947 /* WeatherModel.swift */; };
 		F82A5F1723DD8ACA00B9E947 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F1623DD8ACA00B9E947 /* Config.swift */; };
-		F82A5F4223E46F1000B9E947 /* WeatherDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F4123E46F1000B9E947 /* WeatherDataStore.swift */; };
+		F82A5F4223E46F1000B9E947 /* CityWeatherDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5F4123E46F1000B9E947 /* CityWeatherDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 		F82A5F1023DD7A2500B9E947 /* Api+WeatherForLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+WeatherForLocation.swift"; sourceTree = "<group>"; };
 		F82A5F1323DD7CDF00B9E947 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		F82A5F1623DD8ACA00B9E947 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		F82A5F4123E46F1000B9E947 /* WeatherDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataStore.swift; sourceTree = "<group>"; };
+		F82A5F4123E46F1000B9E947 /* CityWeatherDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,7 +285,7 @@
 		F82A5F3D23E46E0A00B9E947 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				F82A5F4123E46F1000B9E947 /* WeatherDataStore.swift */,
+				F82A5F4123E46F1000B9E947 /* CityWeatherDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -550,7 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82A5F4223E46F1000B9E947 /* WeatherDataStore.swift in Sources */,
+				F82A5F4223E46F1000B9E947 /* CityWeatherDataStore.swift in Sources */,
 				F82A5ED823DD460E00B9E947 /* ViewController.swift in Sources */,
 				F82A5ED423DD460E00B9E947 /* AppDelegate.swift in Sources */,
 				F82A5F0E23DD71E000B9E947 /* WeatherApi.swift in Sources */,
