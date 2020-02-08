@@ -9,5 +9,5 @@
 import Foundation
 
 class Config {
-    static let API_KEY = "77d3161216cca86d9b842db3854500c8"
+    static let OPEN_WEATHER_API_KEY = "77d3161216cca86d9b842db3854500c8"
 }

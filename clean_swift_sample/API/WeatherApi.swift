@@ -9,7 +9,6 @@
 import RxSwift
 import Moya
 
-private let API_KEY = "77d3161216cca86d9b842db3854500c8"
 private let BASE_URL = "http://api.openweathermap.org/data/2.5"
 
 class WeatherApi {
