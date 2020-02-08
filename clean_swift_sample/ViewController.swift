@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        WeatherApi.shared.request(OpenWeatherApi.GetWeatherByName(city: "Tokyo", country: "jp", app_id: Config.API_KEY))
+        WeatherApi.shared.request(OpenWeatherApi.GetWeatherByName(city: "Tokyo", country: "jp", app_id: Config.OPEN_WEATHER_API_KEY))
             .subscribe(onSuccess: { data in
                 print(data)
             }, onError: { error in

@@ -19,9 +19,9 @@ extension OpenWeatherApi {
         var path: String { return "/weather" }
         var task: Task { return .requestParameters(parameters: parameters, encoding: URLEncoding.default) }
         
-        init(city: String, country: String, app_id: String) {
+        init(city: String, country: String) {
             parameters["q"] = city + "," + country
-            parameters["APPID"] = app_id
+            parameters["APPID"] = Config.OPEN_WEATHER_API_KEY
         }
     }
 }
