@@ -6,7 +6,7 @@
 //  Copyright © 2020 oliveapps. All rights reserved.
 //
 
-struct CityData {
+public struct CityData {
     var city: String
     var city_jp: String
     var country: String
@@ -18,6 +18,7 @@ struct CityData {
     }
 }
 
+// MARK: - Sample data
 struct SampleCityList {
     let data: [CityData] = [
         CityData(city: "Hokkaido", city_jp: "北海道", country: "jp"),

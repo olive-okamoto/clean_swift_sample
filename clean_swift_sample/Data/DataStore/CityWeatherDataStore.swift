@@ -11,7 +11,7 @@ import RxSwift
 
 // MARK: - Interface
 public protocol CityWeatherDataStore {
-    func getWeather(by city: String, country: String) -> Observable<WeatherModel>
+    func getWeather(by cityData: CityData) -> Observable<WeatherModel>
 }
 
 // MARK: - Implementation
@@ -19,9 +19,9 @@ struct CityWeatherDataStoreImpl: CityWeatherDataStore {
     
     private var disposeBag = DisposeBag()
     
-    func getWeather(by city: String, country: String) -> Observable<WeatherModel> {
+    func getWeather(by cityData: CityData) -> Observable<WeatherModel> {
         return Observable.create { observer in
-            WeatherApi.shared.request(OpenWeatherApi.GetWeatherByName(city: city, country: country))
+            WeatherApi.shared.request(OpenWeatherApi.GetWeatherByName(city: cityData.city, country: cityData.country))
                 .subscribe(onSuccess: { result in
                     observer.onNext(result)
                     observer.onCompleted()

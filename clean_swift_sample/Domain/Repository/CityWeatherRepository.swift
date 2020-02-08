@@ -10,7 +10,7 @@ import RxSwift
 
 // MARK: - Interface
 public protocol CityWeatherRepository {
-    func getWeather(by city: String, country: String) -> Observable<WeatherModel>
+    func getWeather(by cityData: CityData) -> Observable<WeatherModel>
 }
 
 // MARK: - Inplementation
@@ -22,8 +22,8 @@ struct CityWeatherRepositoryImpl: CityWeatherRepository {
         self.dataStore = dataStore
     }
     
-    func getWeather(by city: String, country: String) -> Observable<WeatherModel> {
-        return dataStore.getWeather(by: city, country: country)
+    func getWeather(by cityData: CityData) -> Observable<WeatherModel> {
+        return dataStore.getWeather(by: cityData)
     }
     
 }
