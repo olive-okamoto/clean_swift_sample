@@ -15,6 +15,8 @@
 		F82702DF23EE820200773FD8 /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702DE23EE820200773FD8 /* CityData.swift */; };
 		F82702E223EEB35500773FD8 /* CitySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702E123EEB35500773FD8 /* CitySelectViewController.swift */; };
 		F82702E423EEB3DE00773FD8 /* CitySelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82702E323EEB3DE00773FD8 /* CitySelectViewController.storyboard */; };
+		F82702E823EEB4BA00773FD8 /* CitySelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702E623EEB4BA00773FD8 /* CitySelectTableViewCell.swift */; };
+		F82702E923EEB4BA00773FD8 /* CitySelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82702E723EEB4BA00773FD8 /* CitySelectTableViewCell.xib */; };
 		F82A5ED423DD460E00B9E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED323DD460E00B9E947 /* AppDelegate.swift */; };
 		F82A5ED623DD460E00B9E947 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED523DD460E00B9E947 /* SceneDelegate.swift */; };
 		F82A5ED823DD460E00B9E947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED723DD460E00B9E947 /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		F82702DE23EE820200773FD8 /* CityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
 		F82702E123EEB35500773FD8 /* CitySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectViewController.swift; sourceTree = "<group>"; };
 		F82702E323EEB3DE00773FD8 /* CitySelectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CitySelectViewController.storyboard; sourceTree = "<group>"; };
+		F82702E623EEB4BA00773FD8 /* CitySelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectTableViewCell.swift; sourceTree = "<group>"; };
+		F82702E723EEB4BA00773FD8 /* CitySelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitySelectTableViewCell.xib; sourceTree = "<group>"; };
 		F82A5ED023DD460E00B9E947 /* clean_swift_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clean_swift_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82A5ED323DD460E00B9E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82A5ED523DD460E00B9E947 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 				F82702E323EEB3DE00773FD8 /* CitySelectViewController.storyboard */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F82702E523EEB47E00773FD8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F82702E623EEB4BA00773FD8 /* CitySelectTableViewCell.swift */,
+				F82702E723EEB4BA00773FD8 /* CitySelectTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F82A5EC723DD460E00B9E947 = {
@@ -337,6 +350,7 @@
 		F82A5F4023E46E2E00B9E947 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F82702E523EEB47E00773FD8 /* Cell */,
 				F82702E023EEB32100773FD8 /* ViewController */,
 			);
 			path = View;
@@ -451,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82702E923EEB4BA00773FD8 /* CitySelectTableViewCell.xib in Resources */,
 				F82A5EE023DD460E00B9E947 /* LaunchScreen.storyboard in Resources */,
 				F82A5EDD23DD460E00B9E947 /* Assets.xcassets in Resources */,
 				F82702E423EEB3DE00773FD8 /* CitySelectViewController.storyboard in Resources */,
@@ -593,6 +608,7 @@
 				F82702D923EE74D500773FD8 /* CityWeatherRepository.swift in Sources */,
 				F82A5F1423DD7CDF00B9E947 /* WeatherModel.swift in Sources */,
 				F82A5ED623DD460E00B9E947 /* SceneDelegate.swift in Sources */,
+				F82702E823EEB4BA00773FD8 /* CitySelectTableViewCell.swift in Sources */,
 				F82702DF23EE820200773FD8 /* CityData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
