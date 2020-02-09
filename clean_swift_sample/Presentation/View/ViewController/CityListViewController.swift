@@ -16,7 +16,12 @@ class CityListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var presenter: CityListPresenter?
     var cityListModel: CityListModel?
+    
+    public func inject(presenter: CityListPresenter) {
+        self.presenter = presenter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
