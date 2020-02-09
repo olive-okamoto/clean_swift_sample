@@ -10,7 +10,7 @@ import RxSwift
 
 // MARK: - Interface
 public protocol CityListRepository {
-    func getCityList() -> Observable<[CityModel]>
+    func getCityList() -> Observable<CityListModel>
 }
 
 // MARK: - Inplementation
@@ -22,7 +22,7 @@ struct CityListRepositoryImpl: CityListRepository {
         self.dataStore = dataStore
     }
     
-    func getCityList() -> Observable<[CityModel]> {
+    func getCityList() -> Observable<CityListModel> {
         return dataStore.getCityList()
     }
     

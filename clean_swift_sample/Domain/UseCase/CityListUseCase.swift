@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 protocol CityListUseCase {
-    func getCityList() -> Observable<[CityModel]>
+    func getCityList() -> Observable<CityListModel>
 }
 
 struct CityListUseCaseImpl: CityListUseCase {
@@ -20,7 +20,7 @@ struct CityListUseCaseImpl: CityListUseCase {
         self.repository = repository
     }
     
-    func getCityList() -> Observable<[CityModel]> {
+    func getCityList() -> Observable<CityListModel> {
         return repository.getCityList()
     }
 }
