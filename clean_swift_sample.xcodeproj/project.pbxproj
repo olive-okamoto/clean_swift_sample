@@ -24,6 +24,7 @@
 		F82702F723F01FA800773FD8 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702F623F01FA800773FD8 /* NSObject+Extension.swift */; };
 		F82702FA23F0247900773FD8 /* CityListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702F923F0247900773FD8 /* CityListBuilder.swift */; };
 		F82702FC23F0254100773FD8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702FB23F0254100773FD8 /* UIViewController+Extension.swift */; };
+		F82702FE23F028A200773FD8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82702FD23F028A200773FD8 /* UITableView+Extension.swift */; };
 		F82A5ED423DD460E00B9E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED323DD460E00B9E947 /* AppDelegate.swift */; };
 		F82A5ED623DD460E00B9E947 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED523DD460E00B9E947 /* SceneDelegate.swift */; };
 		F82A5ED823DD460E00B9E947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A5ED723DD460E00B9E947 /* ViewController.swift */; };
@@ -80,6 +81,7 @@
 		F82702F623F01FA800773FD8 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F82702F923F0247900773FD8 /* CityListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListBuilder.swift; sourceTree = "<group>"; };
 		F82702FB23F0254100773FD8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F82702FD23F028A200773FD8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		F82A5ED023DD460E00B9E947 /* clean_swift_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clean_swift_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82A5ED323DD460E00B9E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82A5ED523DD460E00B9E947 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				F82702F623F01FA800773FD8 /* NSObject+Extension.swift */,
 				F82702FB23F0254100773FD8 /* UIViewController+Extension.swift */,
+				F82702FD23F028A200773FD8 /* UITableView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 			files = (
 				F82A5F4223E46F1000B9E947 /* CityWeatherDataStore.swift in Sources */,
 				F82702DB23EE7AC000773FD8 /* CityWeatherUseCase.swift in Sources */,
+				F82702FE23F028A200773FD8 /* UITableView+Extension.swift in Sources */,
 				F82A5ED823DD460E00B9E947 /* ViewController.swift in Sources */,
 				F82A5ED423DD460E00B9E947 /* AppDelegate.swift in Sources */,
 				F82702EE23F0086400773FD8 /* CityListPresenter.swift in Sources */,
