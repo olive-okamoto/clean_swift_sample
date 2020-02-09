@@ -47,6 +47,7 @@ class CityListPresenterImpl: CityListPresenter {
             .subscribe(
                 onNext: { [weak self] weather in
                     // TODO: Display weather in a different view
+                    print(weather)
                 }, onError: { [weak self] error in
                     // TODO: Error handling
                 }, onCompleted: nil, onDisposed: nil)

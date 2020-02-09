@@ -62,5 +62,8 @@ extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.selectCity(indexPath.row)
+    }
     
 }
