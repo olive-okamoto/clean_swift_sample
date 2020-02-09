@@ -16,15 +16,14 @@ public struct CityModel {
         self.city_jp = city_jp
         self.country = country
     }
-}
-
-// MARK: - Sample data
-struct SampleCityList {
-    let data: [CityModel] = [
-        CityModel(city: "Hokkaido", city_jp: "北海道", country: "jp"),
-        CityModel(city: "Tokyo", city_jp: "東京", country: "jp"),
-        CityModel(city: "Osaka", city_jp: "大阪", country: "jp"),
-        CityModel(city: "Fukuoka", city_jp: "福岡", country: "jp"),
-        CityModel(city: "Okinawa", city_jp: "沖縄", country: "jp")
-    ]
+    
+    static func getSampleCityList() -> [CityModel] {
+        return [
+            CityModel(city: "Hokkaido", city_jp: "北海道", country: "jp"),
+            CityModel(city: "Tokyo", city_jp: "東京", country: "jp"),
+            CityModel(city: "Osaka", city_jp: "大阪", country: "jp"),
+            CityModel(city: "Fukuoka", city_jp: "福岡", country: "jp"),
+            CityModel(city: "Okinawa", city_jp: "沖縄", country: "jp")
+        ]
+    }
 }
