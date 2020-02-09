@@ -10,20 +10,20 @@ import RxSwift
 
 // MARK: - Interface
 public protocol CityListRepository {
-    func getCities() -> Observable<[CityModel]>
+    func getCityList() -> Observable<[CityModel]>
 }
 
 // MARK: - Inplementation
-struct CityListRepositoryImpl: CityWeatherRepository {
+struct CityListRepositoryImpl: CityListRepository {
+ 
+    private let dataStore: CityListDataStore
     
-    private let dataStore: CityDataStore
-    
-    public init(dataStore: CityDataStore) {
+    public init(dataStore: CityListDataStore) {
         self.dataStore = dataStore
     }
     
-    func getCities() -> Observable<[CityModel]> {
-        return dataStore.getCities()
+    func getCityList() -> Observable<[CityModel]> {
+        return dataStore.getCityList()
     }
     
 }

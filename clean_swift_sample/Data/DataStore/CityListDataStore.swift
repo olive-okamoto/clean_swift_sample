@@ -9,14 +9,14 @@
 import RxSwift
 
 // MARK: - Interface
-public protocol CityDataStore {
-    func getCities() -> Observable<[CityModel]>
+public protocol CityListDataStore {
+    func getCityList() -> Observable<[CityModel]>
 }
 
 // MARK: - Implementation
-struct CityDataStoreImpl: CityDataStore {
+struct CityListDataStoreImpl: CityListDataStore {
     
-    func getCities() -> Observable<[CityModel]> {
+    func getCityList() -> Observable<[CityModel]> {
         return Observable.create { observer in
             observer.onNext(CityModel.getSampleCityList())
             return Disposables.create()
