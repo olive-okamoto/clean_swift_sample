@@ -29,6 +29,8 @@ class CityListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.registerNibForCellClass(CityListTableViewCell.self)
+        
         presenter?.getCityList()
     }
 }
