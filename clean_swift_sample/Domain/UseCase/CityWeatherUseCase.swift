@@ -11,7 +11,7 @@ import RxSwift
 
 // MARK: - Interface
 protocol CityWeatherUseCase {
-    func getWeather(by cityData: CityData) -> Observable<WeatherModel>
+    func getWeather(by cityData: CityModel) -> Observable<WeatherModel>
 }
 
 // MARK: - Inplementation
@@ -22,7 +22,7 @@ struct CityWeatherUseCaseImpl: CityWeatherUseCase {
         self.repository = repository
     }
     
-    func getWeather(by cityData: CityData) -> Observable<WeatherModel> {
+    func getWeather(by cityData: CityModel) -> Observable<WeatherModel> {
         return repository.getWeather(by: cityData)
     }
 }
