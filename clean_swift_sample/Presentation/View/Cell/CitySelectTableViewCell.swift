@@ -20,4 +20,8 @@ class CitySelectTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func updateCell(cityModel: CityModel) {
+        cityNameLabel.text = cityModel.city_jp
+    }
+    
 }

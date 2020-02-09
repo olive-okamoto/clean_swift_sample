@@ -16,13 +16,15 @@ protocol CityWeatherPresenter {
 
 class CityWeatherPresenterImpl: CityWeatherPresenter {
     
+    let viewInput: CityListViewInput
     let useCase: CityWeatherUseCase
     let cityUseCase: CityListUseCase
     var cityListModel: CityListModel?
     
     private let disposeBag = DisposeBag()
     
-    public required init(useCase: CityWeatherUseCase, cityUseCase: CityListUseCase) {
+    public required init(viewInput: CityListViewInput, useCase: CityWeatherUseCase, cityUseCase: CityListUseCase) {
+        self.viewInput = viewInput
         self.useCase = useCase
         self.cityUseCase = cityUseCase
     }
@@ -59,6 +61,7 @@ extension CityWeatherPresenterImpl {
     fileprivate func loadCityListModel(cityList: CityListModel) {
         DispatchQueue.main.async {
             self.cityListModel = cityList
+            self.viewInput.setCtiyListModel(cityList)
         }
     }
     
