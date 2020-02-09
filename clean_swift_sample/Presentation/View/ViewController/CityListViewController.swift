@@ -12,7 +12,7 @@ protocol CityListViewInput {
     func setCtiyListModel(_: CityListModel)
 }
 
-class CitySelectViewController: UIViewController {
+class CityListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,12 +23,11 @@ class CitySelectViewController: UIViewController {
 
         tableView.delegate = self
         
-        
     }
 }
 
 // MARK: CityListViewInput
-extension CitySelectViewController: CityListViewInput {
+extension CityListViewController: CityListViewInput {
     
     func setCtiyListModel(_ cityListModel: CityListModel) {
         self.cityListModel = cityListModel
@@ -38,14 +37,14 @@ extension CitySelectViewController: CityListViewInput {
 }
 
 // MARK: Table view delegate and datasource
-extension CitySelectViewController: UITableViewDelegate, UITableViewDataSource {
+extension CityListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cityListModel?.cities.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CitySelectTableViewCell.className, for: indexPath) as! CitySelectTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CityListTableViewCell.className, for: indexPath) as! CityListTableViewCell
         
         
         let city: CityModel = cityListModel!.cities[indexPath.row]

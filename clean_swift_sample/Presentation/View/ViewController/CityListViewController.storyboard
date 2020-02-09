@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--City Select View Controller-->
+        <!--City List View Controller-->
         <scene sceneID="arf-8b-mtC">
             <objects>
-                <viewController storyboardIdentifier="CitySelectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JNn-Hc-bDe" customClass="CitySelectViewController" customModule="clean_swift_sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CitySelectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JNn-Hc-bDe" customClass="CityListViewController" customModule="clean_swift_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wvx-Uw-v1B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CitySelectTableViewCell: UITableViewCell {
+class CityListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var cityNameLabel: UILabel!
     

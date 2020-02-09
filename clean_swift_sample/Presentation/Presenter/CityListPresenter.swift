@@ -9,12 +9,12 @@
 import Foundation
 import RxSwift
 
-protocol CityWeatherPresenter {
+protocol CityListPresenter {
     func getCityList()
     func selectCity(_ index: Int)
 }
 
-class CityWeatherPresenterImpl: CityWeatherPresenter {
+class CityListPresenterImpl: CityListPresenter {
     
     let viewInput: CityListViewInput
     let useCase: CityWeatherUseCase
@@ -56,7 +56,7 @@ class CityWeatherPresenterImpl: CityWeatherPresenter {
 }
 
 // MARK: - Private
-extension CityWeatherPresenterImpl {
+extension CityListPresenterImpl {
     
     fileprivate func loadCityListModel(cityList: CityListModel) {
         DispatchQueue.main.async {
